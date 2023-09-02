@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+
+	<!--Link index.css for external css -->
+	<link rel="stylesheet" type="text/css" href="./index.css">
+	<!-- Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@400;700&family=Montserrat:wght@900&display=swap" rel="stylesheet">
+</head>
+<body>
+	<div class="container">
+		<h1 class="title"> Color Lighten/ Darken</h1>
+	
+
+		<label for="hex"> Color (Hex) </label>
+		<input type="text" name="hex" id="hexInput" placeholder="#000000" value="#C6D5AC" />
+
+		<!-- div with a class of toggle -->
+		<!-- two pieces of text - lighten / darkn -->
+		<!-- div id toggleBtn and inside will have a inner-circle -->
+
+		<div class="toggle">
+			<p id="lightenText" class="toggle-text">Lighten</p>
+			<div id="toggleBtn" class="toggle-btn">
+				<div class="inner-circle"></div>
+			</div>
+			<p id="darkenText" class="toggle-text unselected">Darken</p>
+			
+		</div>
+
+		<label for="slider" id="sliderText">0%</label>
+		<input type="range" min="0" max="100" value="0" name="slider" class="slider" id="slider"/>
+
+		<p>Input Color</p>
+		<div id="inputColor" class="box"></div>
+		<p id="alteredColorText">Altered Color</p>
+		<div id="alteredColor" class="box"></div> 
+
+	</div>
+
+<!-- Link script index.js -->
+<script src="./index.js"></script>
+</body>
+</html>

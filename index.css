@@ -1,0 +1,86 @@
+
+/*CSS Reset*/
+*{
+	margin: 0;
+	padding: 0;
+}
+
+body{
+	font-family: 'Inconsolata', sans-serif;
+	background-color: #3E4560;
+	color: whitesmoke;
+}
+
+.container{
+	padding: 0 10px;
+}
+
+.title{
+	text-align: center;
+	margin: 20px;
+	color: #D6D5AC;
+}
+
+label{
+	display: block;
+	font-size: 20px;
+	margin-bottom: 10px;
+}
+
+input{
+	margin-bottom: 25px;
+}
+
+input[type="text"]{
+	padding: 5px 10px;
+	border-radius: 3px;
+	border: none;
+}
+
+.box{
+	height: 100px;
+	width: 100%;
+	background-color: #C6D5AC;
+	margin-bottom: 25px;
+}
+
+/* display labels and toggle horizontally */
+/*style the toggle button  as well as the inner circle using explicit sizing*/
+/*choose fun colors*/
+/*define an unselected class that will de-emphasize the non-selected text*/
+
+.toggle{
+	display: flex;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.toggle-text{
+	font-size: 18px;
+}
+
+.toggle-btn{
+	height: 30px;
+	width: 60px;
+	background-color: gray;
+	border-radius: 30px;
+	padding: 5px;
+	margin: 0 10px;
+}
+
+.inner-circle{
+	width: 30px;
+	height: 30px;
+	border-radius: 50%;
+	background-color: white;
+	transition: all 250ms;
+}
+
+.toggle-btn.toggled > .inner-circle{
+	transform: translateX(30px);
+	background-color: #333;
+}
+
+.unselected{
+	opacity: 0.25;
+}
